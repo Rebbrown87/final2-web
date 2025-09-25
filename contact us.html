@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rebbrown Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <button class="nav-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <form onsubmit="return validateForm()">
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="social">
+        <h2>Connect with us</h2>
+        <p>Email: <a href="mailto:rebbrownlikalani87@gmail.com">rebbrownlikalani87@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254743754454">0743754454</a></p>
+        <p>Twitter: <a href="https://twitter.com/Rlikayne">@Rlikayne</a></p>
+        <p>Facebook: <a href="https://facebook.com/shadrackleaky">shadrackleaky</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rebbrown Solutions</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Header with Flexbox Navigation */
+header {
+  background: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav .nav-links li a {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+  background-color: #ffffff;
+  color: #004080;
+}
+
+nav .nav-links li a.active {
+  background-color: #ffffff;
+  color: #004080;
+}
+
+/* Grid Layout for Main Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  background: #e0e0e0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.content {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Flexbox for Cards */
+.card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  flex: 1 1 30%;
+  background: #d0eaff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
